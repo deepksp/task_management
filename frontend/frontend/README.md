@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📝 Task Manager – Frontend Application
 
-## Getting Started
+A Task Management frontend application built using Next.js, TypeScript, Tailwind CSS, and Axios, integrated with REST APIs to perform full CRUD operations.
 
-First, run the development server:
+🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Framework: Next.js (App Router)
+
+Language: TypeScript
+
+Styling: Tailwind CSS
+
+HTTP Client: Axios
+
+State Management: React Hooks
+
+API Style: REST
+
+📌 Features
+
+✅ Create new tasks
+
+✅ View all tasks
+
+✅ Edit existing tasks
+
+✅ Delete tasks
+
+✅ Responsive UI (mobile & desktop)
+
+✅ Clean, professional UI
+
+✅ Type-safe codebase
+
+
+## 📁 Project Structure
+
+```
+frontend/
+src/
+ ├── app/
+ │    └── page.tsx              # Main page
+ ├── components/
+ │    ├── TaskForm.tsx          # Create / Edit task form
+ │    ├── TaskItem.tsx          # Individual task card
+ │    └── TaskList.tsx          # Task listing component
+ ├── services/
+ │    └── taskService.ts        # Axios API service
+ ├── types/
+ │    └── task.ts               # Task TypeScript interface
+ └── styles/
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ 🔗 API Endpoints Used
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+ | Method | Endpoint     | Description         |
+| ------ | ------------ | ------------------- |
+| GET    | `/tasks`     | Retrieve all tasks  |
+| GET    | `/tasks/:id` | Retrieve task by ID |
+| POST   | `/tasks`     | Create new task     |
+| PATCH  | `/tasks/:id` | Update task         |
+| DELETE | `/tasks/:id` | Delete task         |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+⚙️ Setup Instructions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1️⃣ Clone Repository
+```bash
+git clone <repository-url>
 
-## Deploy on Vercel
+cd frontend
+ ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2️⃣ Install Dependencies
+```bash
+npm install
+ ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3️⃣ Configure API URL
+```bash
+const API_URL = "http://localhost:3001/tasks";
+```
+
+
+## ▶️ Running the Application
+
+**Development Mode**
+  ```bash
+  npm run dev
+  ```
+
+📍 Open in browser:
+```bash
+http://localhost:3000
+ ```
