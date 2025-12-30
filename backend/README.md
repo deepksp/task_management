@@ -276,7 +276,6 @@ export class Task {
   "error": "Not Found"
 }
 ```
-
 ## 📦 Dependencies
 
 ### Core Dependencies
