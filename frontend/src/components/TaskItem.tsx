@@ -7,6 +7,16 @@ interface Props {
 }
 
 export default function TaskItem({ task, onEdit, onDelete }: Props) {
+  const handleDelete = () => {
+    const confirmed = window.confirm(
+      `Are you sure you want to delete "${task.name}"?`
+    );
+
+    if (confirmed) {
+      onDelete(task.id);
+    }
+  };
+
   return (
     <div className="p-4 border rounded flex justify-between items-center">
       <div>
@@ -18,7 +28,8 @@ export default function TaskItem({ task, onEdit, onDelete }: Props) {
         <button className="text-blue-600" onClick={() => onEdit(task)}>
           Edit
         </button>
-        <button className="text-red-600" onClick={() => onDelete(task.id)}>
+
+        <button className="text-red-600" onClick={handleDelete}>
           Delete
         </button>
       </div>
