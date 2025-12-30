@@ -383,30 +383,6 @@ createTask(taskDetails: CreateTaskParams) {
 // 4. Controller automatically handles updated DTO
 ```
 
-## 🐛 Common Issues
-
-| Issue | Solution |
-|-------|----------|
-| Port 3001 already in use | Change port in main.ts |
-| Database connection failed | Check DB credentials in config |
-| Module not found | Run `npm install` again |
-| TypeORM sync issues | Clear database and resync |
-
-## 📚 Useful Resources
-
-- [NestJS Documentation](https://docs.nestjs.com)
-- [TypeORM Documentation](https://typeorm.io)
-- [NestJS Best Practices](https://docs.nestjs.com/techniques/database)
-- [REST API Design Guide](https://restfulapi.net)
-
-## 🔗 Related Projects
-
-- **Frontend:** [Task Manager Frontend](../frontend/README.md)
-- **Documentation:** [API Setup Guide](../FRONTEND_SETUP_GUIDE.md)
-
-## 📝 License
-
-This project is part of the Task Manager application.
 
 ## ✅ Checklist
 
