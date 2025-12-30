@@ -178,18 +178,6 @@ npm run start
 
 The API will be available at: **http://localhost:3001**
 
-## 🧪 Testing
-
-```bash
-# Unit tests
-npm run test
-
-# E2E tests
-npm run test:e2e
-
-# Test coverage report
-npm run test:cov
-```
 
 ## 📝 Key Files Description
 
