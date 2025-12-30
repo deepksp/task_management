@@ -33,6 +33,26 @@ API Style: REST
 ✅ Type-safe codebase
 
 
+## 📁 Project Structure
+
+```
+frontend/
+src/
+ ├── app/
+ │    └── page.tsx              # Main page
+ ├── components/
+ │    ├── TaskForm.tsx          # Create / Edit task form
+ │    ├── TaskItem.tsx          # Individual task card
+ │    └── TaskList.tsx          # Task listing component
+ ├── services/
+ │    └── taskService.ts        # Axios API service
+ ├── types/
+ │    └── task.ts               # Task TypeScript interface
+ └── styles/
+
+```
+
+
 
  🔗 API Endpoints Used
 
