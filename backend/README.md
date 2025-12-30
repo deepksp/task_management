@@ -421,6 +421,6 @@ This project is part of the Task Manager application.
 
 ---
 
-**Backend Status:** ✅ Production Ready
 
-For issues or questions, refer to the code documentation or NestJS official documentation.
+
+
